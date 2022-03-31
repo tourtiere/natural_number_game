@@ -53,35 +53,7 @@ then $b = c$.
 -/
 theorem mul_left_cancel (a b c : mynat) (ha : a ≠ 0) : a * b = a * c → b = c :=
 begin [nat_num_game]
-  induction c with d hd generalizing b,
-  { rw mul_zero,
-    intro h,
-    cases (eq_zero_or_eq_zero_of_mul_eq_zero _ _ h) with h1 h2,
-      exfalso,
-      apply ha,
-      assumption,
-    assumption
-  },
-  { intro hb,
-    cases b with c,
-    { rw mul_zero at hb,
-      exfalso,
-      apply ha,
-      symmetry at hb,
-      cases (eq_zero_or_eq_zero_of_mul_eq_zero _ _ hb) with h h,
-        exact h,
-      exfalso,
-      exact succ_ne_zero _ h,
-    },
-    { have h : c = d,
-        apply hd,
-        rw mul_succ at hb,
-        rw mul_succ at hb,
-        apply add_right_cancel _ _ _ hb,
-      rw h,
-      refl,
-    }
-  }
+    sorry,
 end
 
 end mynat -- hide

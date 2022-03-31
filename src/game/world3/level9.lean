@@ -22,13 +22,7 @@ $$a(bc)=b(ac)$$
 -/
 lemma mul_left_comm (a b c : mynat) : a * (b * c) = b * (a * c) :=
 begin [nat_num_game]
-  rw ←mul_assoc,
-  rw mul_comm a, 
-  rw mul_assoc,
-  refl,
-
-
-
+    sorry,
 end
 
 /-
@@ -42,7 +36,7 @@ very boring for a human, for example
 example (a b c d e : mynat) :
 (((a*b)*c)*d)*e=(c*((b*e)*a))*d :=
 begin
-  simp,
+    sorry,
 end 
 
 /-

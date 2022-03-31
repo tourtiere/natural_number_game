@@ -20,11 +20,7 @@ $$ d+1 = \operatorname{succ}(d). $$
 -/
 theorem add_one_eq_succ (d : mynat) : d + 1 = succ d :=
 begin [nat_num_game]
-  rw succ_eq_add_one,
-  refl,
-
-
-
+    sorry,
 end
 
 end mynat -- hide

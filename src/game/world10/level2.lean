@@ -14,11 +14,7 @@ then $x\le x$.
 -/
 lemma le_refl (x : mynat) : x ≤ x :=
 begin [nat_num_game]
-  use 0,
-  rw add_zero,
-  refl,
-
-
+    sorry,
 end 
 /-
 ## Upgrading the `refl` tactic 
@@ -32,7 +28,7 @@ attribute [refl] mynat.le_refl
 of the form `a ≤ a` as well as all goals of the form `a = a`.
 -/
 example : (0 : mynat) ≤ 0 := begin
-  refl
+    sorry,
 end
 
 /-

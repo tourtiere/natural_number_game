@@ -50,10 +50,7 @@ $$ a + b + c = a + c + b. $$
 -/
 lemma add_right_comm (a b c : mynat) : a + b + c = a + c + b :=
 begin [nat_num_game]
-  rw add_assoc,
-  rw add_comm b c,
-  rw ←add_assoc,
-  refl,
+    sorry,
 end
 
 /-
@@ -92,7 +89,7 @@ goals. For example check out this one-line proof:
 
 example (a b c d e : mynat) :
 (((a+b)+c)+d)+e=(c+((b+e)+a))+d := begin
-  simp
+    sorry,
 end 
 
 /-
