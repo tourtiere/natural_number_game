@@ -15,3 +15,7 @@ namespace mynat -- hide
 --| m (succ n) := succ (add m n)
 
 
+
+-- if we know expr:= a = b
+-- rw expr, change as for bs,
+-- but rw ← expr, change bs for as
