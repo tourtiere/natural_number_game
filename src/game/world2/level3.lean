@@ -30,6 +30,8 @@ what the variables are".
 For all natural numbers $a, b$, we have
 $$ \operatorname{succ}(a) + b = \operatorname{succ}(a + b). $$
 -/
+
+
 lemma succ_add (a b : mynat) : succ a + b = succ (a + b) :=
 begin [nat_num_game]
     sorry,

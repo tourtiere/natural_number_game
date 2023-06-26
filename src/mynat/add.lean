@@ -1,9 +1,5 @@
 import mynat.definition
 
-/- 
-  mynat/add.lean
-  
--/
 namespace mynat
 
 -- definition of "addition on the natural numbers"
