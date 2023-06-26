@@ -21,7 +21,9 @@ $$ a + b = b + a. $$
 -/
 lemma add_comm (a b : mynat) : a + b = b + a :=
 begin [nat_num_game]
-    sorry,
+  induction b with b hd,
+  rw add_zero, rw zero_add, refl,
+  rw add_succ,rw hd,rw succ_add,refl,
 end
 
 /-

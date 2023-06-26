@@ -3,7 +3,6 @@ import mynat.add -- imports definition of addition on the natural numbers.
 import mynat.mul -- imports definition of multiplication on the natural numbers.
 namespace mynat -- hide
 
-
 /- 
 # Tutorial World
 
@@ -53,7 +52,7 @@ If you want to be reminded about the `refl` tactic, you can click on the "Tactic
 down menu on the left. Resize the window if it's too small. 
 
 Now click on "next level" in the top right of your browser to go onto the second level of
-tutorial world, where we'll learn about the `rw` tactic.
+tutorial world, where learn about the `rw` tactic.
 -/
 
 /- Lemma : no-side-bar

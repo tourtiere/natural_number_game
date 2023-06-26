@@ -31,10 +31,11 @@ For all natural numbers $a, b$, we have
 $$ \operatorname{succ}(a) + b = \operatorname{succ}(a + b). $$
 -/
 
-
 lemma succ_add (a b : mynat) : succ a + b = succ (a + b) :=
 begin [nat_num_game]
-    sorry,
+  induction b with b ha,
+  rw add_zero,rw add_zero,refl,
+  rw add_succ,rw ha, rw add_succ,refl,
 end
 
 end mynat -- hide 
