@@ -27,7 +27,12 @@ $$ 1 \times m = m. $$
 -/
 lemma one_mul (m : mynat) : 1 * m = m :=
 begin [nat_num_game]
-    sorry,
+  induction m with m h,
+  refl,
+  rw mul_succ,
+  rw h,
+  rw succ_eq_add_one,
+  refl,
 end
 
 end mynat -- hide

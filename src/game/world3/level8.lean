@@ -19,7 +19,9 @@ Multiplication is commutative.
 -/
 lemma mul_comm (a b : mynat) : a * b = b * a :=
 begin [nat_num_game]
-    sorry,
+induction b with b h,
+simp,
+rw mul_succ,rw h,rw succ_mul,refl,
 end
 
 /-

@@ -36,7 +36,7 @@ very boring for a human, for example
 example (a b c d e : mynat) :
 (((a*b)*c)*d)*e=(c*((b*e)*a))*d :=
 begin
-    sorry,
+    simp,
 end 
 
 /-

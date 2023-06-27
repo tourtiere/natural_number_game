@@ -25,7 +25,11 @@ $$ (a + b) \times t = at + bt. $$
 -/
 lemma add_mul (a b t : mynat) : (a + b) * t = a * t + b * t :=
 begin [nat_num_game]
-    sorry,
+induction b with b h,
+repeat{rw add_zero},rw zero_mul,refl,
+rw add_succ,rw succ_mul,rw succ_mul,simp, rw h,
+simp,
+
 end
 
 /-

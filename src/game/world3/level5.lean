@@ -29,7 +29,11 @@ $$ (ab)c = a(bc). $$
 -/
 lemma mul_assoc (a b c : mynat) : (a * b) * c = a * (b * c) :=
 begin [nat_num_game]
-    sorry,
+  induction c with c h,
+  repeat{rw mul_zero},
+  repeat{rw mul_succ},
+  rw h,
+  rwa mul_add,
 end
 
 /-

@@ -30,7 +30,13 @@ $$ t(a + b) = ta + tb. $$
 
 lemma mul_add (t a b : mynat) : t * (a + b) = t * a + t * b :=
 begin [nat_num_game]
-    sorry,
+  induction a with a h,
+  rw zero_add, rw mul_zero,
+  rw zero_add,refl,
+  rw succ_add, rw mul_succ, rw h,
+  rw mul_succ,
+  rw add_assoc, rw add_comm(t*b),rw ←  add_assoc, refl,
+
 end
 
 def left_distrib := mul_add -- the "proper" name for this lemma

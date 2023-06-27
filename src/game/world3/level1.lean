@@ -57,7 +57,10 @@ $$ 0 \times m = 0. $$
 -/
 lemma zero_mul (m : mynat) : 0 * m = 0 :=
 begin [nat_num_game]
-    sorry,
+  induction m with m hm,
+  refl,
+  rw mul_succ,
+  rw hm,refl,
 end
 
 end mynat -- hide
