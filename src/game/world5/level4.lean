@@ -63,5 +63,5 @@ example (P Q R S T U: Type)
 (l : T → U)
 : U :=
 begin
-    sorry,
+apply l,apply j,apply h, apply p,
 end

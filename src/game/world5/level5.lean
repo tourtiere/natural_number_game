@@ -46,7 +46,7 @@ We define an element of $\operatorname{Hom}(P,\operatorname{Hom}(Q,P))$.
 -/
 example (P Q : Type) : P → (Q → P) :=
 begin
-    sorry,
+  intro p, intro q,exact p,
 end
 
 /-

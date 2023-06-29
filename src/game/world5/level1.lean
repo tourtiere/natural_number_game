@@ -102,7 +102,6 @@ begin
 exact h(p),
 
 
-
 end 
 
 /- Tactic : exact

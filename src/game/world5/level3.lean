@@ -119,7 +119,11 @@ example (P Q R S T U: Type)
 (l : T → U)
 : U :=
 begin
-    sorry,
+
+have h1 := h(p),
+have h2 := j(h1),
+have h3 := l(h2),
+exact h3,
 end
 
 /-
